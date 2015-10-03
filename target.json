@@ -1,6 +1,6 @@
 {
   "name": "nxp-lpc111x-gcc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Community member maintained build target for the NXP LPC111x using GCC",
   "keywords": [
     "NXP",
