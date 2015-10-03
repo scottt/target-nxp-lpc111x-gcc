@@ -1,0 +1,28 @@
+{
+  "name": "nxp-lpc111x-gcc",
+  "version": "0.0.1",
+  "description": "Community member maintained build target for the NXP LPC111x using GCC",
+  "keywords": [
+    "NXP",
+    "lpc111x",
+    "lpc11cxx",
+    "gcc"
+  ],
+  "author": "Scott Tsai <scottt.tw@gmail.com>",
+  "repository": {
+    "url": "git@github.com:scottt/target-nxp-lpc111x-gcc.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/scottt/target-nxp-lpc111x-gcc",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause",
+      "type": "bsd-3-clause"
+    }
+  ],
+  "inherits": {
+    "mbed-gcc": "*"
+  },
+  "toolchain": "CMake/toolchain.cmake",
+  "dependencies": {}
+}
