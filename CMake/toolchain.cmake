@@ -18,13 +18,17 @@ if(TARGET_NXP_LPC111X_GCC_TOOLCHAIN_INCLUDED)
 endif()
 set(TARGET_NXP_LPC111X_GCC_TOOLCHAIN_INCLUDED 1)
 
+# override armv7-m setting in target-mbed-gcc toolchain.cmake
+set(CMAKE_SYSTEM_PROCESSOR "armv6-m")
+
 # provide compatibility definitions for compiling with this target: these are
 # definitions that legacy code assumes will be defined. Before adding something
 # here, think VERY CAREFULLY if you can't change anywhere that relies on the
 # definition that you're about to add to rely on the TARGET_LIKE_XXX
 # definitions that yotta provides based on the target.json file.
 #
-add_definitions("-DTARGET_LPC111X -DTARGET_LPC -DTOOLCHAIN_GCC -DTOOLCHAIN_GCC_ARM")
+# Decided on the compatibility definitions to provide after grepping for "TARGET_LPC" in mbed classic
+add_definitions("-DTARGET_LPC1114")
 
 # append non-generic flags, and set device linker script
 

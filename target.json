@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Community member maintained build target for the NXP LPC111x using GCC",
   "keywords": [
-    "NXP",
+    "nxp",
+    "lpc1114",
     "lpc111x",
     "lpc11cxx",
     "gcc"
@@ -23,6 +24,13 @@
   "inherits": {
     "mbed-gcc": "*"
   },
-  "toolchain": "CMake/toolchain.cmake",
-  "dependencies": {}
+  "similarTo": [
+    "lpc1114",
+    "lpc111x",
+    "nxp",
+    "cortex-m0",
+    "armv6-m",
+    "gcc"
+  ],
+  "toolchain": "CMake/toolchain.cmake"
 }
